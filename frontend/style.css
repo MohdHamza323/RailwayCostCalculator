@@ -1,0 +1,16 @@
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+  background: #f2f2f2;
+  text-align: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 400px;
+  margin: auto;
+}
+input {
+  width: 60px;
+}

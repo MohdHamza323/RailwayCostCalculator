@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Delivery Cost Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Delivery Cost Calculator</h1>
+  <form id="orderForm">
+    <div class="grid">
+      <script>
+        let products = "ABCDEFGHI";
+        for (let p of products) {
+          document.write(`<label>${p}: <input type="number" name="${p}" min="0" value="0" /></label>`);
+        }
+      </script>
+    </div>
+    <button type="submit">Calculate</button>
+  </form>
+  <h2 id="result"></h2>
+  <script src="script.js"></script>
+</body>
+</html>
