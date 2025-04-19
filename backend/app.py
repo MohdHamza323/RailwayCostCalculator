@@ -21,6 +21,10 @@ distances = {
 def get_distance(a, b):
     return distances.get((a, b), distances.get((b, a), float('inf')))
 
+@app.route('/')
+def index():
+    return "Backend is live and working!"
+
 @app.route('/calculate-delivery-cost', methods=['POST'])
 def calculate_cost():
     order = request.get_json()
